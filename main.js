@@ -26,13 +26,16 @@ async function fetchData() {
 
 }
 
-//fetchData();
- //console.log(countries);
-//console.log(regions);
-
-//DrawBody(document.body);
 function DrawBody(host){
     
+
+    const findDiv=document.createElement("div");
+    findDiv.className="findDiv";
+    host.appendChild(findDiv);
+
+    
+
+
 
     countries.forEach((e)=>{
         e.drawCountry(host);
@@ -42,16 +45,54 @@ function DrawBody(host){
 }
 
 async function main() {
-  await fetchData();             // sačekaj da se svi podaci učitaju
-  console.log(countries);
-  console.log(regions);
+  await fetchData();            
+  //console.log(countries);
+  //console.log(regions);
+
+
+
+    const navbar=document.createElement("nav");
+    navbar.className="navbar";
+    document.body.appendChild(navbar);
+    DrawNavbar(navbar);
+
 
     const div=document.createElement("div");
     div.className="divBody";
     document.body.appendChild(div);
     DrawBody(div);
 
-    
+
 }
 
 main();
+
+
+
+
+
+
+function DrawNavbar(host){
+    const proba=document.createElement("div");
+    proba.innerHTML="Where in the world?";
+    host.appendChild(proba);
+
+
+    const divM=document.createElement("div");
+    divM.className="divTextDesc";
+    host.appendChild(divM);
+
+
+
+   const imgM=document.createElement("img");
+    imgM.className="img";
+    imgM.src="moon.png";
+    divM.appendChild(imgM);
+
+
+    const descC=document.createElement("div");
+    descC.className="name";
+    descC.innerHTML="Dark Mode";
+    divM.appendChild(descC);
+
+}

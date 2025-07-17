@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
 }
 
 .divBody{
@@ -11,10 +10,8 @@
 }
 .containerCountry
 {
-    
-    border-radius: 2px;
+    border-radius: 10px;
     width: 320px;
-    
     margin: 10px;
     background-color: rgb(211, 211, 233);
 }
@@ -25,7 +22,8 @@
       width: 320px;
     height: 200px;
     object-fit: cover;
-   border-radius: 2px;
+   
+   border-radius: 10px;
 }
 
 
@@ -50,4 +48,12 @@
     padding: 4px;
     font-size: 22px;
     font-weight: bold;
+}
+
+.navbar{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(205, 198, 198);
 }
