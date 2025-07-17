@@ -1,0 +1,53 @@
+#containerCountry{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.divBody{
+    display: flex;
+    justify-content: start;
+}
+.containerCountry
+{
+    
+    border-radius: 2px;
+    width: 320px;
+    
+    margin: 10px;
+    background-color: rgb(211, 211, 233);
+}
+
+
+
+.imgCountry{
+      width: 320px;
+    height: 200px;
+    object-fit: cover;
+   border-radius: 2px;
+}
+
+
+.divTextDesc
+{
+    margin: 4px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    gap: 10px;
+}
+
+.textT{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.countryName{
+    margin: 4px;
+    gap: 2px;
+    padding: 4px;
+    font-size: 22px;
+    font-weight: bold;
+}
