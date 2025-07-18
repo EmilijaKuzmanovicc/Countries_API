@@ -78,13 +78,6 @@ export class Country {
 
     this.drawTextDesc(descCountry,"Capital:",this.capital);
 
-
-
-
-
-
-
-
     host.appendChild(this.container);
 
   }
@@ -103,7 +96,7 @@ export class Country {
 
 
     const descC=document.createElement("div");
-    descC.className="name";
+    descC.className="nameT";
     descC.innerHTML=desc;
     div.appendChild(descC);
 

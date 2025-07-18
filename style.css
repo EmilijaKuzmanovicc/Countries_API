@@ -1,59 +1,161 @@
-#containerCountry{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+:root {
+  --base-color: rgb(249, 246, 250);
+  --base-variant: rgba(240, 231, 245, 0.859);
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
 }
 
-.divBody{
-    display: flex;
-    justify-content: start;
-}
-.containerCountry
-{
-    border-radius: 10px;
-    width: 320px;
-    margin: 10px;
-    background-color: rgb(211, 211, 233);
+.darkMode {
+  --base-color: #5c6075;
+  --base-variant: #34384b;
+  --text-color: white;
+  --secondary-text: #e8e9ed;
+  --primary-color: #c4c7cf;
+  --accent-color: #023069;
 }
 
-
-
-.imgCountry{
-      width: 320px;
-    height: 200px;
-    object-fit: cover;
-   
-   border-radius: 10px;
+#containerCountry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-
-.divTextDesc
-{
-    margin: 4px;
-    padding: 4px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
-    gap: 10px;
+.divBody {
+  margin-top: 60px;
+  display: flex;
+  justify-content: start;
+  background-color: var(--base-variant);
+  color: var(--text-color);
 }
 
-.textT{
-    font-size: 16px;
-    font-weight: 700;
+.containerCountry {
+  border-radius: 10px;
+  width: 320px;
+  margin: 10px;
+  background-color: var(--base-color);
 }
 
-.countryName{
-    margin: 4px;
-    gap: 2px;
-    padding: 4px;
-    font-size: 22px;
-    font-weight: bold;
+.imgCountry {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+
+  border-radius: 10px;
 }
 
-.navbar{
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(205, 198, 198);
+.divTextDesc {
+  margin: 4px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 140px;
+}
+
+.textT {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.countryName {
+  margin: 4px;
+  gap: 2px;
+  padding: 4px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: var(--base-color);
+  color: var(--text-color);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.countyDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  all: unset;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#theme-switch {
+  background-color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+}
+
+.divList {
+  display: flex;
+}
+
+.searchInput {
+  padding: 8px;
+  width: 300px;
+
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.divList {
+  flex-direction: column;
+}
+
+.findDiv {
+  justify-content: space-between;
+}
+
+.nameT {
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
